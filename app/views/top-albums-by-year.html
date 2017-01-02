@@ -1,0 +1,20 @@
+<div ng-include="'views/main_tabs.html'"></div>
+<div class="container-fluid" style="width: 600px">
+<div ng-repeat="album in ctrl.topAlbums">
+    <h1>{{album.year}}</h1>
+
+    <div class="row">
+
+
+            <div ng-repeat="item in album.months">
+                <div class="col-sm-4">{{ item.month }}</div>
+                <div class="col-sm-8">
+                   <div style="color: darkblue"> {{ item.album }}</div>
+                    <div style="font-size: 25px">{{ item.artist }}</div>
+                    <div ng-if="item.img"><IMG ng-src="http://127.0.0.1:8000{{item.img}}" alt="album"></IMG></div>
+                    <div ng-if="!item.img" style="width: 174px; height: 174px; background-color: #A00000; color: black; font-size: 18px; padding: 10px; text-align: center;">Oops! No album cover found</div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>

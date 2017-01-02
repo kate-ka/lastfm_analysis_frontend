@@ -1,0 +1,37 @@
+<style>
+        .jumbotron {
+            background-color: #f4511e; /* Orange */
+            color: #ffffff;
+        }
+
+        #container, #container_2, #container_3 {
+            width: 600px;
+        }
+
+        li a {
+            color: #f4511e;
+            font-weight: bold;
+        }
+
+        .nav-pills > li.active > a:hover {
+            background-color: #A94442
+        }
+
+        .nav-pills > li.active > a {
+            background-color: #A94442
+        }
+    </style>
+
+<!-- BEGIN: Underscore Template Definition. -->
+<div class="jumbotron text-center">
+    <h1>Company</h1>
+
+    <p>We specialize in blablabla</p>
+
+    <form class="form-inline">
+        <input type="text" ng-model="main.user.username" class="form-control" size="50" placeholder="Your username">
+        <button type="button" class="btn btn-danger" ng-click="main.onFormSubmit()">Submit</button>
+    </form>
+</div>
+
+

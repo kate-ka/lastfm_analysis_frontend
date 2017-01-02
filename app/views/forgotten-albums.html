@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div ng-include="'views/main_tabs.html'"></div>
+    <form>
+        <label for="id_year"> Select year:</label>
+        <select id = 'id_year' name="year" ng-model="ctrl.model.yearFrom">
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+        </select>
+        <input id="submit_year" type="submit" value="submit" ng-click="ctrl.onYearSubmit()">
+    </form>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div ng-repeat="album in ctrl.forgotten_albums">
+            <div class="col-sm-4">
+                <ul>
+                    <li>{{album.album}}</li>
+                    <li>{{album.artist}}</li>
+                    <li> {{album.last_listened}}</li>
+                    <li>{{album.total_scrobbles}}</li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <div ng-if="album.album_image">
+                    <img ng-src="http://127.0.0.1:8000{{album.album_image}}" style="width: 100px; height: 100px"/>
+                </div>
+                <div ng-if="!album.album_image" style="width: 100px; height: 100px; background-color: #A00000; color: black; font-size: 18px; padding: 10px; text-align: center;">Oops! No album cover found</div>
+
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

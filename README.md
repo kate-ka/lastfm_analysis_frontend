@@ -22,7 +22,7 @@ top albums by year,photo collage created from albums images and list of forgotte
 - Bootstrap 3
 
 ## Installation guideline
-Backend can be found here: https://github.com/kate-ka/lastfm_analysis
+Backend can be found here: https://github.com/kate-ka/lastfm_analysis.
 Run backend:
  - Activate your virtual environment: `source <virtual_env>/bin/activate`
  - Install needed packages: `pip install -r requirements.txt`

@@ -23,8 +23,8 @@ top albums by year,photo collage created from albums images and list of forgotte
 
 ## Installation guideline
 Backend can be found here: https://github.com/kate-ka/lastfm_analysis.
-Run backend:
- - Activate your virtual environment: `source <virtual_env>/bin/activate`
+
+- Activate your virtual environment: `source <virtual_env>/bin/activate`
  - Install needed packages: `pip install -r requirements.txt`
  - Run Django server: `python manage.py runserver`
  
